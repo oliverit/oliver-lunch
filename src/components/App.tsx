@@ -8,7 +8,7 @@ import {
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu'
 import { Link, Route, Switch } from 'react-router-dom'
-import Order from './Bestellen'
+import Order from './Order'
 import Main from './Main'
 import ProductList from './ProductList'
 
