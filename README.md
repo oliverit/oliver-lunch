@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Oliver Lunch App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Deze repository bevat de broncode voor een app waarmee de collega's van Oliver IT hun lunch kunnen bestellen... tenminste, als het ook een echte app was geweest 😏
 
-## Available Scripts
+## Ontwikkelen
 
-In the project directory, you can run:
+Om de aan deze app te werken kun je de repo forken naar je eigen GitHub account en deze vanuit daar clonen.
 
-### `yarn start`
+De repository maakt gebruik van [Yarn](https://classic.yarnpkg.com) voor de dependencies.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Het `yarn start` script start de app lokaal op in de browser op de url http://localhost:3000.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Het `yarn build` script maakt een productie build van de app. Dit commando wordt gebruikt door bijvoorbeeld [Netlify](https://www.netlify.com) als je daar de repo laat deployen.
 
-### `yarn test`
+Om de code die je schrijft te controleren wordt er gebruik gemaakt van [ESLint](https://eslint.org) en [Prettier](https://prettier.io). Zorg ervoor dat je je code editor (bijv. [VSCode](https://code.visualstudio.com)) dusdanig configureert dat deze de foutmeldingen van ESLint zichtbaar maakt, en de regels van Prettier (automatisch) kan toepassen.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Architectuur
 
-### `yarn build`
+De app is gebouwd op basis van [Create React App](https://create-react-app.dev) en maakt gebruik van [Redux Toolkit](https://redux-toolkit.js.org) voor state management.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Voor de user interface wordt er gebruik gemaakt van [Material-UI](https://material-ui.com) en voor de navigatie gebruiken we [React Router](https://reactrouter.com/web/guides/quick-start).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Opdracht
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Onze collega's hebben twee problemen gemeld:
 
-### `yarn eject`
+- De prijslijst ziet er niet netjes uit. Is er hier wel gebruik gemaakt van de List component van Material-UI? Het lijkt er op van niet!
+- De prijzen zijn niet in Euro's en er worden punten in plaats van komma's gebruikt voor de decimalen.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Daarnaast zouden ze ook graag nog de volgende nieuwe functionaliteit zien:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Wanneer je gaat bestellen staan er altijd 3 bestelregels en je kan deze niet verwijderen of toevoegen. Dat is erg onhandig, je zou gewoon moeten beginnen met 1 regel en dan zelf regels moeten kunnen toevoegen of verwijderen.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Wij zouden het geweldig vinden als je voor ons deze problemen kan oplossen. Veel succes!! 👌
