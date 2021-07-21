@@ -4,7 +4,7 @@ Deze repository bevat de broncode voor een app waarmee de collega's van Oliver I
 
 ## Ontwikkelen
 
-Om de aan deze app te werken kun je de repo forken naar je eigen GitHub account en deze vanuit daar clonen.
+Om de aan deze app te werken kun je de repo [gebruiken als template](https://github.com/oliverit/oliver-lunch/generate) voor een repo op je eigen GitHub account en deze vanuit daar clonen.
 
 De repository maakt gebruik van [Yarn](https://classic.yarnpkg.com) voor de dependencies.
 
